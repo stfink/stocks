@@ -24,4 +24,5 @@ class LogManager(object):
         return LoggerFactory()
 
     def get_logger(self, name, level=logging.DEBUG, handlers=3):
+        # handlers=0->None, 1->screen, 2->file, 3->both
         return self.logger_factory.get_logger(name, level, handlers)

@@ -6,7 +6,6 @@ class LoggerFactory():
         self.logger = logging.getLogger()
 
     def get_logger(self, name, level, handlers):
-        # handlers=0->None, 1->screen, 2->file, 3->both
         self.logger = logging.getLogger(name)
         self.set_level(level)
         formatter = logging.Formatter(
